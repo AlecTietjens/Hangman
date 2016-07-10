@@ -19,6 +19,10 @@ Many different Hangman games can be played by many different users at any
 given time. Each game can be retrieved or played by using the path parameter
 `urlsafe_game_key`.
 
+Scoring is defined by how close to a perfect game a user has, i.e, if the user has no
+incorrect guesses then they have had a perfect game. So the best score a user can have 
+is 0, and incorrect guesses add points to the user's score.
+
 ##Files Included:
  - api.py: Contains endpoints and game playing logic.
  - app.yaml: App configuration.
